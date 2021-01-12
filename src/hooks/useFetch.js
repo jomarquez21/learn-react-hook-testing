@@ -29,6 +29,15 @@ export const useFetch = ( url ) => {
                     });
                 }
 
+            })
+            .catch(() => {
+                if ( isMounted.current ) {
+                    setState({
+                        loading: false,
+                        error: 'No se puedo cargar la info',
+                        data: null,
+                    });
+                }
             });
 
     },[url])

@@ -13,7 +13,7 @@ export const LoginScreen = () => {
                 className="btn btn-primary"
                 onClick={ ()=> setUser({
                     id: 123,
-                    name: 'Fernando'
+                    name: 'Jomarquez'
                 })}
             >
                 Login
